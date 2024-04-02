@@ -1,8 +1,7 @@
 name: Workflow testing
 
 on:
-  workflow_dispatch:
-  
+  workflow_dispatch:  
   push:
     branches: [ "main" ]
   pull_request:
@@ -17,6 +16,6 @@ jobs:
       - name: Show directory before chekout
         run: 1s -1
       - name: Checkout our code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Show directory after checkout
         run: 1s -1
