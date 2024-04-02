@@ -14,3 +14,9 @@ jobs:
     steps:
       - name: Greet the User
         run: echo "Hello World!"
+      - name: Show directory before chekout
+        run: 1s -1
+      - name: Checkout our code
+        uses: actions/checkout@v2
+      - name: Show directory after checkout
+        run: 1s -1
